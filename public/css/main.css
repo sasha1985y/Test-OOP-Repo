@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/*div,
+figure,
+pre,
+h1,
+h2,
+h3,
+p,
+span,
+svg,
+circle,
+i,
+a,
+img,
+body{
+
+  border: 1px solid #515255;
+}*/
+
+body {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik Dirt",cursive, "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    color: rgb(255, 255, 255);
+    background-image: url('/img/утро.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/*header {
+    margin: 0;
+    padding: 0;
+    background-color : rgb(136, 230, 233);
+}*/
+
+/*main {
+    background-color : rgb(148, 233, 136);
+}*/
+
+/*footer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 182, 106);
+    color: blueviolet;
+}*/
+
+.roof-wall {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid rgb(96, 158, 173);
+}
+
+.roof1 {
+    margin-left: -50px;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid rgb(171, 185, 144);
+}
+
+.roof2 {
+    margin-left: -51px;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid rgb(171, 185, 144);
+}
+
+.full-roof:hover {
+    opacity: 0.7;
+}
+
+.full-roof {
+    display: flex;
+}
+
+.front-wall {
+    margin-left: 5px;
+	width: 90px;
+	height: 90px;
+	background: rgb(96, 158, 173);
+}
+
+.side-wall {
+	width: 100px;
+	height: 90px;
+	background: rgb(170, 201, 113);
+}
+
+.full-walls {
+    display: flex;
+}
+
+.full-walls:hover {
+    opacity: 0.7;
+}
+
+.house {
+    display: table;
+}
+
+.quartal {
+    margin-top: 30%;
+    justify-content: center;
+    display: table;
+    display: flex;
+}
+
+.btn-propertyes {
+    cursor: help;
+}
+
+.house2-container {
+    width: 200px;
+    height: 200px;
+    display: table;
+}
+
+.house2 {
+    height: 200px;
+    background: 
+        url("/img/домик/окно.png") no-repeat 120px 70px,
+        url("/img/домик/фундамент.png") no-repeat 13px 3px,
+        url("/img/домик/крыша.png") no-repeat 0px 5px,
+        url("/img/домик/дверь.png") no-repeat 34px 107px;
+    background-size: 30px, 187px 187px, 209px, 37px;
+}
+
+.house2:hover{
+    opacity: 0.7;
+}
+
+.circle {
+    cx: 105;
+    cy: 105;
+    r: 93;
+    fill: none;
+    stroke: rgb(96, 57, 170);
+    stroke-width: 24;
+    stroke-linecap: round;
+    stroke-dasharray: 584;
+}
