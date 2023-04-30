@@ -25,7 +25,7 @@ body {
     padding: 0;
     font-family: "Rubik Dirt",cursive, "Arial", "Helvetica Neue", "Helvetica", sans-serif;
     color: rgb(255, 255, 255);
-    background-image: url('/img/утро.png');
+    background-image: url('https://thumb.cloud.mail.ru/weblink/thumb/xw1/zPkN/LgsrTCHEh');
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -129,24 +129,52 @@ body {
 .house2 {
     height: 200px;
     background: 
-        url("/img/домик/окно.png") no-repeat 120px 70px,
-        url("/img/домик/фундамент.png") no-repeat 13px 3px,
-        url("/img/домик/крыша.png") no-repeat 0px 5px,
-        url("/img/домик/дверь.png") no-repeat 34px 107px;
+        url("https://thumb.cloud.mail.ru/weblink/thumb/xw1/uqiz/CJirS6yX9") no-repeat 120px 70px, /*окно*/
+        url("https://thumb.cloud.mail.ru/weblink/thumb/xw1/FWuG/cfQ1fujdj") no-repeat 13px 3px, /*фундамент*/
+        url("https://thumb.cloud.mail.ru/weblink/thumb/xw1/347R/1pm6yWecE") no-repeat 0px 5px, /*крыша*/
+        url("https://thumb.cloud.mail.ru/weblink/thumb/xw1/yAUx/bfYWnYwS8") no-repeat 34px 107px; /*дверь*/
     background-size: 30px, 187px 187px, 209px, 37px;
+    --x: 0px;
+    --y: 0px;
+    transform: translate(var(--x), var(--y));
 }
 
 .house2:hover{
     opacity: 0.7;
 }
 
-.circle {
-    cx: 105;
-    cy: 105;
-    r: 93;
-    fill: none;
-    stroke: rgb(96, 57, 170);
-    stroke-width: 24;
-    stroke-linecap: round;
-    stroke-dasharray: 584;
+.render-house-list{
+    list-style: none;
+}
+
+.arrow-up{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(55, 6, 102);
+    background-image: url('../img/стрелки/arrow-up.svg');
+    background-repeat: no-repeat;
+}
+
+.arrow-down{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(55, 6, 102);
+    background-image: url('../img/стрелки/arrow-down.svg');
+    background-repeat: no-repeat;
+}
+
+.arrow-left{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(55, 6, 102);
+    background-image: url('../img/стрелки/arrow-left.svg');
+    background-repeat: no-repeat;
+}
+
+.arrow-right{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(55, 6, 102);
+    background-image: url('../img/стрелки/arrow-right.svg');
+    background-repeat: no-repeat;
 }
