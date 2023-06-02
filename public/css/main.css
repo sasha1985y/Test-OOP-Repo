@@ -50,65 +50,6 @@ body {
     color: blueviolet;
 }*/
 
-.roof-wall {
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 100px solid rgb(96, 158, 173);
-}
-
-.roof1 {
-    margin-left: -50px;
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-top: 100px solid rgb(171, 185, 144);
-}
-
-.roof2 {
-    margin-left: -51px;
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: 100px solid rgb(171, 185, 144);
-}
-
-.full-roof:hover {
-    opacity: 0.7;
-}
-
-.full-roof {
-    display: flex;
-}
-
-.front-wall {
-    margin-left: 5px;
-	width: 90px;
-	height: 90px;
-	background: rgb(96, 158, 173);
-}
-
-.side-wall {
-	width: 100px;
-	height: 90px;
-	background: rgb(170, 201, 113);
-}
-
-.full-walls {
-    display: flex;
-}
-
-.full-walls:hover {
-    opacity: 0.7;
-}
-
-.house {
-    display: table;
-}
-
 .quartal {
     margin-top: 30%;
     justify-content: center;
@@ -120,10 +61,15 @@ body {
     cursor: help;
 }
 
+.house-container,
 .house2-container {
     width: 200px;
     height: 200px;
     display: table;
+    position: absolute;
+    --x: 0px;
+    --y: 0px;
+    transform: translate(var(--x), var(--y));
 }
 
 .house2 {
@@ -134,9 +80,6 @@ body {
         url("https://thumb.cloud.mail.ru/weblink/thumb/xw1/347R/1pm6yWecE") no-repeat 0px 5px, /*крыша*/
         url("https://thumb.cloud.mail.ru/weblink/thumb/xw1/yAUx/bfYWnYwS8") no-repeat 34px 107px; /*дверь*/
     background-size: 30px, 187px 187px, 209px, 37px;
-    --x: 0px;
-    --y: 0px;
-    transform: translate(var(--x), var(--y));
 }
 
 .house2:hover{
@@ -177,4 +120,23 @@ body {
     background-color: rgb(55, 6, 102);
     background-image: url('../img/стрелки/arrow-right.svg');
     background-repeat: no-repeat;
+}
+
+.trash { 
+    width: 27px;
+    height: 35px;
+    background-color: rgb(55, 6, 102);
+    background-image: url('../img/trash.png');
+    background-repeat: no-repeat;
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0; 
 }
